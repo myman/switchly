@@ -1,0 +1,38 @@
+[
+  {
+    "id": "p1",
+    "name": "Heritage T-Shirt",
+    "description": "Men's cotton T-shirt, breathable and sweat-absorbent for all-day comfort.",
+    "imageUrl": "assets/images/tshirt.png",
+    "price": 19.99,
+    "category": "Clothing",
+    "color": "White"
+  },
+  {
+    "id": "p2",
+    "name": "The run Jacket",
+    "description": "Sporty jacket designed for comfort and style, perfect for outdoor activities and daily wear.",
+    "imageUrl": "assets/images/jacket.png",
+    "price": 39.99,
+    "category": "Clothing",
+    "color": "White"
+  },
+  {
+    "id": "p3",
+    "name": "Classic Backpack",
+    "description": "Classic backpack with multiple convenient compartments, ideal for travel and outdoor adventures.",
+    "imageUrl": "assets/images/backpack.png",
+    "price": 25.00,
+    "category": "Accessories",
+    "color": "Black"
+  },
+  {
+    "id": "p4",
+    "name": "Adibreak Short",
+    "description": "Comfortable shorts with a sporty look, featuring breathable fabric ideal for workouts and casual wear.",
+    "imageUrl": "assets/images/short.png",
+    "price": 25.00,
+    "category": "Clothing",
+    "color": "Black"
+  }
+]
