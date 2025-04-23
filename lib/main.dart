@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:provider/provider.dart';
 import 'package:switchly/core/constants/colors.dart';
+import 'package:switchly/features/auth/presentation/screens/login_screen.dart';
 import 'package:switchly/features/product/data/datasources/product_local_datasource.dart';
 import 'package:switchly/features/product/domain/repositories/product_repository_impl.dart';
 import 'package:switchly/features/product/domain/usecases/get_products.dart';
 import 'package:switchly/features/product/presentation/providers/product_provider.dart';
-import 'package:switchly/features/product/presentation/screens/home_screen.dart';
+import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
+import 'package:switchly/core/themes/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
-  FlutterStatusbarcolor.setStatusBarColor(AppColors.background);
+  FlutterStatusbarcolor.setStatusBarColor(AppColors.backgroundColor);
   FlutterStatusbarcolor.setStatusBarWhiteForeground(false);
 }
 
@@ -32,11 +33,8 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Switchly',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: const HomeScreen(),
+        theme: AppTheme.lightTheme,
+        home: const LoginScreen(),
       ),
     );
   }

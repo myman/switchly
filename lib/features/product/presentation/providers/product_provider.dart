@@ -9,25 +9,28 @@ class ProductProvider with ChangeNotifier {
   List<Product> _filteredProducts = [];
 
   List<Product> get products => _filteredProducts;
+  List<Product> get allProducts => _products;
 
   ProductProvider(this.getProducts);
 
   Future<void> loadProducts() async {
     _products = await getProducts();
-    _filteredProducts = List.from(_products); // Ban đầu hiển thị tất cả
+    _filteredProducts = List.from(_products);
     notifyListeners();
   }
 
-  // Hàm filter sản phẩm theo điều kiện
-  void filterProducts({String? category, double? maxPrice, String? color}) {
+  void filterProducts(
+      {String? category, double? minPrice, double? maxPrice, String? color}) {
     _filteredProducts = _products.where((product) {
       final matchesCategory = category == null || product.category == category;
-      final matchesPrice = maxPrice == null || product.price <= maxPrice;
+      final matchesMinPrice = minPrice == null || product.price >= minPrice;
+      final matchesMaxPrice = maxPrice == null || product.price <= maxPrice;
       final matchesColor = color == null || product.color == color;
-
-      return matchesCategory && matchesPrice && matchesColor;
+      return matchesCategory &&
+          matchesMinPrice &&
+          matchesMaxPrice &&
+          matchesColor;
     }).toList();
-
     notifyListeners();
   }
 

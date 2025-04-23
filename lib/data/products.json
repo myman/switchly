@@ -4,16 +4,16 @@
     "name": "Heritage T-Shirt",
     "description": "Men's cotton T-shirt, breathable and sweat-absorbent for all-day comfort.",
     "imageUrl": "assets/images/tshirt.png",
-    "price": 19.99,
+    "price": 19,
     "category": "Clothing",
     "color": "White"
   },
   {
     "id": "p2",
-    "name": "The run Jacket",
+    "name": "The Run Jacket",
     "description": "Sporty jacket designed for comfort and style, perfect for outdoor activities and daily wear.",
     "imageUrl": "assets/images/jacket.png",
-    "price": 39.99,
+    "price": 39,
     "category": "Clothing",
     "color": "White"
   },
@@ -22,7 +22,7 @@
     "name": "Classic Backpack",
     "description": "Classic backpack with multiple convenient compartments, ideal for travel and outdoor adventures.",
     "imageUrl": "assets/images/backpack.png",
-    "price": 25.00,
+    "price": 25,
     "category": "Accessories",
     "color": "Black"
   },
@@ -31,8 +31,26 @@
     "name": "Adibreak Short",
     "description": "Comfortable shorts with a sporty look, featuring breathable fabric ideal for workouts and casual wear.",
     "imageUrl": "assets/images/short.png",
-    "price": 25.00,
+    "price": 95,
     "category": "Clothing",
     "color": "Black"
+  },
+  {
+    "id": "p5",
+    "name": "Samba Sneaker",
+    "description": "Timeless sneaker silhouette with a modern edge, combining comfort and street-ready style.",
+    "imageUrl": "assets/images/sneaker.png",
+    "price": 80,
+    "category": "Sneaker",
+    "color": "White"
+  },
+  {
+    "id": "p6",
+    "name": "Trucket Hat",
+    "description": "A stylish and breathable hat that adds a touch of flair to any sunny day outfit.",
+    "imageUrl": "assets/images/hat.png",
+    "price": 50,
+    "category": "Accessories",
+    "color": "Yellow"
   }
 ]
